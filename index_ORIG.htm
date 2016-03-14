@@ -10,11 +10,10 @@
 </script>
 <script type="text/javascript" language="javascript" src="scripts/eventControl.js"></script>
 <script type="text/javascript" language="javascript" src="scripts/door.js"></script>
-<script type="text/javascript" language="javascript" src="scripts/monster_(from_door).js"></script>
 <script type="text/javascript" language="javascript" src="scripts/Graphics_Door.js"></script>
-<script type="text/javascript" language="javascript" src="scripts/Graphics_Monster.js"></script>
 <script type="text/javascript" language="javascript" src="scripts/Map.js"></script>
 <script type="text/javascript" language="javascript" src="scripts/Sound.js"></script>
+
 <script type="text/javascript" language="javascript" src="scripts/Movement.js"></script>
 <script type="text/javascript" language="javascript" src="scripts/GraphicsDisplay.js"></script>
 <link href="styles/main.css" rel="stylesheet"/>
@@ -368,40 +367,6 @@ font-family:Xerxes;}
 .doorSide2_2_inner
 {left:25px;width:96px;height:16px;display:none;position:absolute;top:4px;background-image:url('doorinner_default2.png');background-position:bottom left;background-repeat:no-repeat;}
 
-.monsterFront1
-{position:absolute;left:95px;top:30px;width:320px;height:222px;z-index:301;display:none;background-image:url('monsterFront1.png');background-repeat:no-repeat;}
-.monsterFront1_inner
-{left:39px;width:181px;height:166px;display:none;position:absolute;top:6px;background-image:url('monsterinner_default.png');background-position:bottom;}
-
-.monsterFront2
-{position:absolute;left:135px;top:47px;width:175px;height:140px;z-index:201;display:none;background-image:url('monsterFront2.png');background-repeat:no-repeat;}
-.monsterFront2_inner
-{left:25px;width:125px;height:16px;display:none;position:absolute;top:4px;background-image:url('monsterinner_default2.png');background-position:bottom;background-repeat:no-repeat;}
-
-.monsterFront1_button
-{position:absolute;right:100px;width:20px;top:80px; height:24px;background-image:url('monsterbutton.png');z-index:2001;}
-
-.monsterSide1_1
-{position:absolute;left:0px;top:15px;width:64px;height:222px;z-index:301;display:none;background-image:url('monsterSide1.png');background-repeat:no-repeat;}
-.monsterSide1_1_inner
-{left:0px;width:64px;height:166px;display:none;position:absolute;top:25px;background-image:url('monsterinner_default.png');background-position:bottom right;}
-
-.monsterSide1_2
-{position:absolute;right:0px;top:15px;width:64px;height:222px;z-index:201;display:none;background-image:url('monsterSide1.png');background-repeat:no-repeat;}
-.monsterSide1_2_inner
-{left:0px;width:64px;height:166px;display:none;position:absolute;top:25px;background-image:url('monsterinner_default.png');background-position:bottom left;}
-
-.monsterSide2_1
-{position:absolute;right:328px;top:47px;width:120px;height:140px;z-index:201;display:none;background-image:url('monsterFront2.png');background-repeat:no-repeat;background-position:top right;}
-.monsterSide2_1_inner
-{right:25px;width:95px;height:16px;display:none;position:absolute;top:4px;background-image:url('monsterinner_default2.png');background-position:bottom right;background-repeat:no-repeat;}
-
-.monsterSide2_2
-{position:absolute;left:328px;top:47px;width:120px;height:140px;z-index:201;display:none;background-image:url('monsterFront2.png');background-repeat:no-repeat;}
-.monsterSide2_2_inner
-{left:25px;width:96px;height:16px;display:none;position:absolute;top:4px;background-image:url('monsterinner_default2.png');background-position:bottom left;background-repeat:no-repeat;}
-
-
 .wallFront2_walldecor
 {position:absolute;left:120px;top:40px;width:208px;height:142px;z-index:201;display:none;}
 
@@ -604,28 +569,16 @@ font-family:Xerxes;}
 <div class="wallRside2"></div>
 <div class="wallRside3"></div>
 
-	<div class="wallSide1_1"></div>
-		<div class="doorSide1_1"><div class="doorSide1_1_inner"></div></div>
+	<div class="wallSide1_1"></div><div class="doorSide1_1"><div class="doorSide1_1_inner"></div></div>
 		<div class="doorSide1_2"><div class="doorSide1_2_inner"></div></div>
-		<div class="monsterSide1_1"><div class="monsterSide1_1_inner"></div></div>
-		<div class="monsterSide1_2"><div class="monsterSide1_2_inner"></div></div>
 	<div class="stairsFront1_decor"></div>
-	<div class="wallFront1"></div>
-		<div class="doorFront1"><div class="doorFront1_inner"></div></div>
+	<div class="wallFront1"></div><div class="doorFront1"><div class="doorFront1_inner"></div></div>
 		<div class="doorFront1_button"></div>
-		<div class="monsterFront1"><div class="monsterFront1_inner"></div></div>
-		<div class="monsterFront1_button"></div>		
 	<div class="wallSide1_2"></div>
-	<div class="wallSide2_1"></div><div class="wallLside2_1_walldecor"></div>
-	<div class="doorSide2_1"><div class="doorSide2_1_inner"></div></div>
-	<div class="monsterSide2_1"><div class="monsterSide2_1_inner"></div></div>
+	<div class="wallSide2_1"></div><div class="wallLside2_1_walldecor"></div><div class="doorSide2_1"><div class="doorSide2_1_inner"></div></div>
 	<div class="stairsFront2_decor"></div>
-	<div class="wallFront2"></div><div class="wallFront2_walldecor"></div>
-	<div class="doorFront2"><div class="doorFront2_inner"></div></div>
-	<div class="monsterFront2"><div class="monsterFront2_inner"></div></div>
-	<div class="wallSide2_2"></div><div class="wallRside2_2_walldecor"></div>
-	<div class="doorSide2_2"><div class="doorSide2_2_inner"></div></div>
-	<div class="monsterSide2_2"><div class="monsterSide2_2_inner"></div></div>
+	<div class="wallFront2"></div><div class="wallFront2_walldecor"></div><div class="doorFront2"><div class="doorFront2_inner"></div></div>
+	<div class="wallSide2_2"></div><div class="wallRside2_2_walldecor"></div><div class="doorSide2_2"><div class="doorSide2_2_inner"></div></div>
 	
 	<div class="wallSide3_1"></div>
 	<div class="wallFront3"></div>

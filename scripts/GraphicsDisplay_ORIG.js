@@ -176,8 +176,6 @@ function updateViewport(){
 		
 	updateDecore();
 	updateDoor();
-	updateMonster();
-	
 }
 
 // start updateDecore. should consolidate like walls, reduced from 400 lines to 180
@@ -483,7 +481,6 @@ function clear_decor(){
 	$('div[class*=decor]').css('display', 'none');
 	$('div[class*=decor]').html('');
 	$('div[class*=door]').css('display', 'none');
-	$('div[class*=monster]').css('display', 'none');
 	clearevents('.doorFront1_button');
 }
 

@@ -20,15 +20,15 @@ function moveMe(povDir)
 	{
 		case "u":
 			var temploc = curmap[curX + frntx][curY + frnty];
-			if (temploc.type == 0 || (temploc.type == 2 && temploc.door.position < 1)|| (temploc.type == 3 && temploc.monster.position < 1)) {
+			if (temploc.type == 0 || (temploc.type == 2 && temploc.door.position < 1)) {
 				curX += frntx;
 				curY += frnty;
 				enablestep = true;
-			}		
+			}
 		break;
 		case "r":
 			var temploc = curmap[curX + ritex][curY + ritey];
-			if (temploc.type == 0 || (temploc.type == 2 && temploc.door.position < 1)|| (temploc.type == 3 && temploc.monster.position < 1)) {
+			if (temploc.type == 0 || (temploc.type == 2 && temploc.door.position < 1)) {
 				curX += ritex;
 				curY += ritey;
 				enablestep = true;
@@ -36,7 +36,7 @@ function moveMe(povDir)
 		break;
 		case "d":
 			var temploc = curmap[curX - frntx][curY - frnty];
-			if (temploc.type == 0 || (temploc.type == 2 && temploc.door.position < 1)|| (temploc.type == 3 && temploc.monster.position < 1)) {
+			if (temploc.type == 0 || (temploc.type == 2 && temploc.door.position < 1)) {
 				curX -= frntx;
 				curY -= frnty;
 				enablestep = true;
@@ -44,7 +44,7 @@ function moveMe(povDir)
 		break;
 		case "l":
 			var temploc = curmap[curX + leftx][curY + lefty];
-			if (temploc.type == 0 || (temploc.type == 2 && temploc.door.position < 1)|| (temploc.type == 3 && temploc.monster.position < 1)) {
+			if (temploc.type == 0 || (temploc.type == 2 && temploc.door.position < 1)) {
 				curX += leftx;
 				curY += lefty;
 				enablestep = true;

@@ -108,11 +108,11 @@ var LEVEL1 = new Array(
 "01110000010000000000",
 "01010001110000111100",
 "01111101010000100100",
-"00011101110000100130", //18,13 CELL
+"00011101110000100110",
 "00011111111010100100",
-"00011100001110100300",
+"00011100001110100100",
 "00000000000011100100",
-"00000000000030000100",
+"00000000000010000100",
 "00000000000000000000");
 
 var curmap = new Array();
@@ -130,7 +130,6 @@ function loadLevel1() {
 	
 	curmap[15][3].w.push(new stair('Down'));
 	
-	//curmap[18][14].s.push(new portrait('Zed'));//test
 	curmap[8][15].n.push(new portrait('Iaido'));
 	curmap[8][12].s.push(new portrait('Zed'));
 	curmap[4][16].n.push(new portrait('Chani'));
@@ -186,23 +185,15 @@ function writemap(level) {
 			switch (cells[y].charAt(x))
 			{
 				case is = '0':
-					curmap[x][y].type = 1; //empty
+					curmap[x][y].type = 1;
 				break;
 				case is = '1' :
-					curmap[x][y].type = 0; //wall
+					curmap[x][y].type = 0;
 				break;
 				case is = '2':
-					curmap[x][y].type = 2; //door
+					curmap[x][y].type = 2;
 					curmap[x][y].door = new door('portcullis');
 				break;
-				case is = '4':
-					curmap[x][y].type = 2; //door
-					curmap[x][y].door = new door('wooden');
-				break;				
-				case is = '3':
-					curmap[x][y].type = 3; //door monster
-					curmap[x][y].monster = new monster('portcullis');
-				break;				
 			}
 		}
 	}
